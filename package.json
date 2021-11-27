@@ -1,0 +1,34 @@
+{
+  "name": "practice_comments",
+  "version": "1.1.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://olhazhokhova.github.io/practice_comments",
+  "scripts": {
+    "dev": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /practice_comments/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olhazhokhova/practice_comments.git"
+  },
+  "keywords": [],
+  "author": "Olha Zhokhova <zhokhova.olha@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olhazhokhova/practice_comments/issues"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "parcel-plugin-nuke-dist": "^1.0.1",
+    "posthtml-include": "^1.6.2",
+    "sass": "^1.32.8"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "lodash.throttle": "^4.1.1",
+    "notiflix": "^3.2.2",
+    "simplelightbox": "^2.10.1"
+  }
+}
