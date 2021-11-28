@@ -14,7 +14,7 @@ body {
 
 .comments {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap: 20px;
   padding: 20px;
 }
@@ -24,6 +24,8 @@ body {
   padding: 15px;
   border-radius: 3px;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .comments .item .delete {
@@ -36,36 +38,73 @@ body {
   cursor: pointer;
 }
 
-.comment-form {
-  background-color: rgb(88, 17, 202);
+.comment-container {
+  background-color: #f2f0fa;
   padding: 20px 20px 0;
+}
+
+.comment-form,
+.toggle-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.comment-form label {
+  padding-left: 15px;
+  margin-bottom: 5px;
+  display: block;
 }
 
 .comment-form input,
 .comment-form button {
   width: 100%;
   margin-bottom: 20px;
-  line-height: 32px;
+  line-height: 40px;
+  border: 0 none;
+  border-radius: 25px;
+  text-indent: 15px;
+  font-size: 16px;
 }
 .comment-form button {
-  background-color: bisque;
+  background-color: blue;
+  color: #fff;
+}
+
+.data {
+  font-size: 12px;
+  color: #9b9b9b;
+  margin-top: auto;
+  text-align: right;
+}
+
+.author {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 5px;
 }
 
 .toggle-container {
-  padding: 20px;
+  padding: 20px 0;
 }
 .toggle-comments {
   margin: 0 auto;
   width: 100%;
-  line-height: 32px;
+  line-height: 40px;
   background-color: rgb(51, 224, 51);
   outline: 0 none;
   border: 0 none;
   cursor: pointer;
+  color: #fff;
+  border-radius: 25px;
+  font-size: 16px;
 }
 
 .filter {
   width: 100%;
   margin-top: 15px;
-  line-height: 30px;
+  line-height: 40px;
+  font-size: 16px;
+  border-radius: 25px;
+  border: 1px solid #e0e3e4;
+  text-indent: 15px;
 }

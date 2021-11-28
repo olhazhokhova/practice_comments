@@ -29,11 +29,11 @@ function createMarkupWithSpam(data) {
     .map(({ comment, name, createdAt, id }) => {
       return `
       <div class="item">
-        ${name}
+        <div class="author">${name}</div>
         <div>
           ${comment}
         </div>
-        ${createdAt}
+        <div class="data">${createdAt}</div>
         <button class="delete" data-id="${id}">x</button>
       </div>
     `;
@@ -52,11 +52,11 @@ function createMarkupWithoutSpam(data) {
     .map(({ comment, name, createdAt, id }) => {
       return `
       <div class="item">
-        ${name}
+        <div class="author">${name}</div>
         <div>
           ${comment}
         </div>
-        ${createdAt}
+        <div class="data">${createdAt}</div>
         <button class="delete" data-id="${id}">x</button>
       </div>
     `;
@@ -70,11 +70,11 @@ function createMarkupByFilter(data) {
     .map(({ comment, name, createdAt, id }) => {
       return `
       <div class="item">
-        ${name}
+        <div class="author">${name}</div>
         <div>
           ${comment}
         </div>
-        ${createdAt}
+        <div class="data">${createdAt}</div>
         <button class="delete" data-id="${id}">x</button>
       </div>
     `;
